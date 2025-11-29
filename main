@@ -1,0 +1,29 @@
+(*
+使用說明：
+
+0. 打開 Mac 內建的 Script Editor，選擇 New Document 後，將下面的程式貼上內容。
+1. 打開螢幕錄影功能，並確保 Slack 已開啟且位於前台。
+2. 先確認「從第一張截圖捲到第二張截圖的對話範圍」需要按幾次 ⬇️ 鍵。
+3. 將下方程式碼中的 "21" 改成你實際需要按的 ⬇️ 次數。
+4. 準備好後，即可按下右上方的「▶️ 開始」執行腳本。
+5. 程式執行期間，Slack 會保持在視窗最上層，且每隔 4 秒會自動捲動一次。
+6. 當畫面自動捲到對話底部時，需手動停止程式。
+7. 在等待錄製的期間，你可以去沖個澡，或沖杯咖啡，或讓自己吃點好料的。
+*)
+
+tell application "System Events"
+    tell application "Slack" to activate
+    
+    delay 3
+    repeat 9999 times
+        repeat 21 times
+            key code 125 -- Down Arrow key
+        end repeat
+        delay 4
+    end repeat
+end tell
+
+(*注意：
+- 這段腳本會在背景持續輸入「向下鍵」，若你切換到其他 App，它也會在其他 App 上按 ⬇️。
+- 請務必在 Script Editor 內按下停止鍵來終止執行。
+*)

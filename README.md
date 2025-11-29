@@ -1,4 +1,4 @@
-# Auto-convo-scroller for Screen Recording 螢幕錄影時的自動捲動小工具
+# 螢幕錄影時的自動捲動小工具 Auto-convo-scroller for Screen Recording 
 
 因為面對過違法資遣／違法解僱，為了要在短時間內存證與公司重要人物的對話，因此寫了一個小程式。
 
